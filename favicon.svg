@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="48" fill="#A9292E"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#F1E9D8" stroke-width="9" stroke-dasharray="12.6 12.6"/>
+  <circle cx="50" cy="50" r="34" fill="#F1E9D8"/>
+  <circle cx="50" cy="50" r="29" fill="none" stroke="#A9292E" stroke-width="1.6" stroke-dasharray="3 2.5"/>
+  <text x="50" y="60" text-anchor="middle" font-family="Didot, Bodoni 72, Georgia, serif" font-weight="700" font-size="28" fill="#1B1612">SX</text>
+</svg>
