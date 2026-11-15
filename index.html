@@ -608,8 +608,8 @@ const SITE = {
   headshot: { src: "photos/headshot.jpg", caption: "Livingston, NJ → Rutgers" },
 
   about: [
-    "I'm a sophomore in the Honors College at Rutgers Business School, studying Finance and Computer Science. I'm passionate about markets and the role technology plays in them, and I'm pursuing a career in sales and trading.",
-    "I grew up in Livingston, NJ, and spent most of my childhood in badminton gyms, where I eventually competed at the national level. Sport taught me to decide fast and stay calm when a point turns against me. The CS side is how I get leverage: I'd rather write a script that watches the yield curve than refresh a chart by hand."
+    "I grew up in Livingston, NJ, and spent most of my childhood in badminton gyms, where I eventually competed at the national level. When I came to Rutgers, I decided to study Finance and Computer Science, and I'm now a sophomore in the Honors College at Rutgers Business School.",
+    "I'm passionate about markets and the role technology plays in them, and I'm pursuing a career in sales and trading. Outside of class, I captain the Rutgers badminton team and co-founded LBF Pickleball."
   ],
   facts: ["Finance + CS", "Class of 2029", "Aiming for sales & trading", "RUBAD captain"],
   // The two face-up cards next to "About me"
@@ -666,13 +666,13 @@ const SITE = {
 
   /* ---------- PROJECTS ----------
      status: "In play" (ongoing) or "Played" (finished)
-     link:   a full https:// URL, or "" for "No link yet"
+     link:   a full https:// URL, or "" for no link
      numbers: [{ value: "40", label: "survey responses" }] — only real numbers
      object types: ace, chip, board, ticket, spread                       */
   projects: [
     {
       title: "Yield Curve Monitor", status: "In play", dates: "Fall 2026",
-      desc: "A Python tool that pulls Federal Reserve interest-rate data, charts the Treasury curve, alerts me to recession signals like inversions, and tests how well the curve has called past recessions. I'm the only builder; it's my Phi Chi Theta passion project.",
+      desc: "A Python tool that pulls Federal Reserve interest-rate data, charts the Treasury curve, alerts me to recession signals like inversions, and tests how well the curve has called past recessions. I built it on my own.",
       numbers: [], tags: ["Python", "Fed rate data", "Dashboard", "Fixed income"], link: "",
       object: { type: "ace" }
     },
@@ -901,7 +901,7 @@ $("#projects").innerHTML = SITE.projects.map(p => `
       <p class="desc">${txt(p.desc)}</p>
       ${p.numbers.length ? `<div class="nums">${p.numbers.map(n => `<div>${esc(n.value)}<small>${esc(n.label)}</small></div>`).join("")}</div>` : ""}
       <div class="tags">${p.tags.map(t => `<span>${esc(t)}</span>`).join("")}</div>
-      ${p.link ? `<a class="plink" href="${esc(p.link)}" target="_blank" rel="noopener">See the project</a>` : `<span class="plink none">No link yet</span>`}
+      ${p.link ? `<a class="plink" href="${esc(p.link)}" target="_blank" rel="noopener">See the project</a>` : ""}
     </div>
   </article>`).join("");
 
